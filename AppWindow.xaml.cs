@@ -23,10 +23,47 @@ namespace EventosCorporativos
         public AppWindow()
         {
             InitializeComponent();
+            Main.Content = new Inicio();
         }
-        private void buttonAppWindow_Click(object sender, RoutedEventArgs e)
+
+        private void buttonInicio_Click(object sender, RoutedEventArgs e)
         {
-            Content = new Login();
+            Main.Content = new Inicio();
+        }
+
+        private void buttonLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Login();
+        }
+
+        private void buttonParticipantes_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Participantes();
+        }
+
+        private void buttonSalas_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Salas();
+        }
+
+        private void buttonRecursos_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Recursos();
+        }
+
+        private void buttonFinanciero_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Financiero();
+        }
+
+        private void buttonFacturacion_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Facturacion();
+        }
+
+        private void buttonInformes_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Informes();
         }
     }
 }

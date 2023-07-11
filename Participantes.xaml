@@ -1,0 +1,33 @@
+﻿<Page x:Class="EventosCorporativos.Participantes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EventosCorporativos"
+      mc:Ignorable="d" 
+      d:DesignHeight="510" d:DesignWidth="1000"
+      Title="Participantes">
+
+    <Grid Background="#2E8A99">
+        <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="1" Opacity="0.2" Margin="36,74,0,0" Width="252" HorizontalAlignment="Left"></Border>
+        <Label x:Name="labelParticipantes" Content="Gestión de participantes" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="268" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="38,105,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <Label x:Name="lblEmpresa" Content="Empresa:" HorizontalAlignment="Left" Margin="36,225,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <Label x:Name="lblCargo" Content="Cargo:" HorizontalAlignment="Left" Margin="48,280,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <Label x:Name="lblTelefono" Content="Teléfono:" HorizontalAlignment="Left" Margin="35,163,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <Label x:Name="lblCorreo" Content="Correo electrónico:"  HorizontalAlignment="Left" Margin="331,163,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <Label x:Name="lblEstado" Content="Estado:"  HorizontalAlignment="Left" Margin="42,343,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White"/>
+        <TextBox x:Name="textBoxNombre" HorizontalAlignment="Left" Margin="111,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="558" Height="30"/>
+        <TextBox x:Name="textBoxEmpresa" HorizontalAlignment="Left" Margin="111,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
+        <TextBox x:Name="textBoxCargo" HorizontalAlignment="Left" Margin="111,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Height="30"/>
+        <TextBox x:Name="textBoxTelefono" HorizontalAlignment="Left" Margin="111,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="30"/>
+        <TextBox x:Name="textBoxCorreo" HorizontalAlignment="Left" Margin="471,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Height="30"/>
+        <ComboBox x:Name="comboBoxEstado" HorizontalAlignment="Left" Margin="111,342,0,0" VerticalAlignment="Top" Width="120" Height="30">
+            <ComboBoxItem>Activo</ComboBoxItem>
+            <ComboBoxItem>Inactivo</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="buttonGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="37,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FF45C33E" Foreground="White" Cursor="Hand"/>
+        <Button x:Name="buttonBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="195,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Foreground="White" Background="#FFCFC724" Cursor="Hand"/>
+        <Button x:Name="buttonEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="823,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FFDE5656" Foreground="White" Cursor="Hand"/>
+    </Grid>
+</Page>

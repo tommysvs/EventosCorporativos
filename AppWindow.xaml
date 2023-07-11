@@ -3,18 +3,93 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:local="clr-namespace:EventosCorporativos"
         mc:Ignorable="d"
-        Title="Thr3e (Eventos corporativos)" Height="600" Width="1000" Background="#1F6E8C" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Window.Resources>
+        Title="Eventos corporativos" Height="600" Width="1000" Background="#1F6E8C" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
+    <Window.Resources>
+        <ControlTemplate x:Key="NoMouseOverButtonTemplate"   
+                 TargetType="Button">
+            <Border Background="{TemplateBinding Background}"  
+          BorderBrush="{TemplateBinding BorderBrush}"  
+          BorderThickness="{TemplateBinding BorderThickness}">
+                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled"  
+             Value="False">
+                    <Setter Property="Background"  
+              Value="{x:Static SystemColors.ControlLightBrush}" />
+                    <Setter Property="Foreground"  
+              Value="{x:Static SystemColors.GrayTextBrush}" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
     </Window.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Button x:Name="buttonAppWindow" Content="Entrar" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFECE5C7" Foreground="#FF116A7B" BorderBrush="{x:Null}" Height="40" Width="96" Click="buttonAppWindow_Click" Cursor="Hand" FontWeight="Bold"/>
-        <Label x:Name="labelEveCor" Content="Eventos corporativos v1.0.0" HorizontalAlignment="Left" Margin="10,528,0,0" VerticalAlignment="Top" FontWeight="Normal" Foreground="White" Height="26" Width="154" FontSize="10" Opacity="0.8"/>
+    <Grid Background="#1F6E8C">
+        <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="90" Opacity="0.2"></Border>
+        <StackPanel Orientation="Horizontal" Height="90" VerticalAlignment="Top" Width="800" HorizontalAlignment="Center">
+            <Button x:Name="buttonInicio" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonInicio_Click" >
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="Home" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonLogin" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonLogin_Click" >
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="ArrowRight" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Iniciar sesión" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonParticipantes" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonParticipantes_Click" >
+                <StackPanel Orientation="Vertical">
+                    <fa:ImageAwesome Icon="Users" Height="20" Width="20" Foreground="White" />
+                    <TextBlock Text="Participantes" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="Hand" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonSalas" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonSalas_Click">
+                <StackPanel Orientation="Vertical" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <fa:ImageAwesome Icon="Book" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Salas" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonRecursos" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonRecursos_Click">
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="VideoCamera" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Recursos" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonFinanciero" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonFinanciero_Click">
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="Money" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Financiero" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonFacturacion" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonFacturacion_Click">
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="File" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Facturación" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonInformes" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonInformes_Click">
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="LineChart" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Informes" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <Frame x:Name="Main" Margin="0,90,0,0" Height="510" Width="1000" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>
