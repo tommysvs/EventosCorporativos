@@ -10,6 +10,20 @@
 
     <Grid Background="#2E8A99">
         <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="1" Opacity="0.2" Margin="36,74,0,0" Width="226" HorizontalAlignment="Left"/>
-        <Label x:Name="lavelSalas" Content="Reservación de salas" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="226" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="labelSalas" Content="Reservación de salas" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="226" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="labelSala" Content="Escoja la sala:" HorizontalAlignment="Left" Margin="33,99,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="comboBoxSala" HorizontalAlignment="Left" Margin="36,133,0,0" VerticalAlignment="Top" Width="304">
+            <ComboBoxItem>Taiga</ComboBoxItem>
+            <ComboBoxItem>Amazonia</ComboBoxItem>
+            <ComboBoxItem>Sabana</ComboBoxItem>
+            <ComboBoxItem>Tundra</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="labelSala_Copy" Content="Fecha" HorizontalAlignment="Left" Margin="433,99,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <DatePicker x:Name="datePickerSala" HorizontalAlignment="Left" Margin="433,131,0,0" VerticalAlignment="Top" Width="204" FirstDayOfWeek="Monday" Text="Escocha la fecha" Cursor="Hand"/>
+        <Label x:Name="labelSalaND" Content="Sala no disponible.  Por favor, escoja otra sala." HorizontalAlignment="Left" Margin="36,160,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="labelFechaSalaND" Content="Fecha no disponible.  Por favor, escoja otra fecha." HorizontalAlignment="Left" Margin="433,160,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <RichTextBox x:Name="richTextBoxSala" Margin="36,241,330,162"></RichTextBox>
+        <Label x:Name="labelSala_Copy1" Content="Comentarios adicionales:" HorizontalAlignment="Left" Margin="36,207,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="buttonReservarSala" Content="Reservar" HorizontalAlignment="Left" Margin="37,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FF45C33E" Foreground="White" Cursor="Hand"/>
     </Grid>
 </Page>

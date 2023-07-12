@@ -11,5 +11,21 @@
     <Grid Background="#2E8A99">
         <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="1" Opacity="0.2" Margin="36,74,0,0" Width="252" HorizontalAlignment="Left"/>
         <Label x:Name="labelRecursos" Content="Asignación de recursos" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="268" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxLuces" Content="Luces" HorizontalAlignment="Left" Margin="33,307,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="checkBoxComputadora" Content="Computadora" HorizontalAlignment="Left" Margin="33,397,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="checkBoxProyector" Content="Proyector" HorizontalAlignment="Left" Margin="33,367,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="checkBoxMicrofono" Content="Microfono" HorizontalAlignment="Left" Margin="33,337,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="checkBoxEquipoSonido" Content="Equipo de sonido" HorizontalAlignment="Left" Margin="33,276,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="checkBoxCattering" Content="Cattering" HorizontalAlignment="Left" Margin="33,0,0,0" VerticalAlignment="Center" Foreground="White"/>
+        <CheckBox x:Name="checkBoxMesas" Content="Mesas" HorizontalAlignment="Left" Margin="33,216,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="labelSalaAsig" Content="Escoja la sala:" HorizontalAlignment="Left" Margin="33,99,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="comboBoxSalaAsig" HorizontalAlignment="Left" Margin="36,133,0,0" VerticalAlignment="Top" Width="304">
+            <ComboBoxItem Content="Taiga"/>
+            <ComboBoxItem Content="Amazonia"/>
+            <ComboBoxItem Content="Sabana"/>
+            <ComboBoxItem Content="Tundra"/>
+        </ComboBox>
+        <Label x:Name="labelSalaND" Content="Sala no disponible.  Por favor, escoja otra sala." HorizontalAlignment="Left" Margin="36,160,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="buttonAsignarRecursos" Content="Asignar recursos" HorizontalAlignment="Left" Margin="833,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FF45C33E" Foreground="White" Cursor="Hand"/>
     </Grid>
 </Page>

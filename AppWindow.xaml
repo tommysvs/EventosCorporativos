@@ -68,10 +68,17 @@
                 </StackPanel>
             </Button>
 
-            <Button x:Name="buttonFinanciero" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonFinanciero_Click">
+            <Button x:Name="buttonIngresos" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonIngresos_Click">
                 <StackPanel Orientation="Vertical" Cursor="Hand">
-                    <fa:ImageAwesome Icon="Money" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
-                    <TextBlock Text="Financiero" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <fa:ImageAwesome Icon="AngleLeft" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Ingresos" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="buttonEgresos" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonEgresos_Click">
+                <StackPanel Orientation="Vertical" Cursor="Hand">
+                    <fa:ImageAwesome Icon="AngleRight" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock Text="Egresos" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </StackPanel>
             </Button>
 

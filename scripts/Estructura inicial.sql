@@ -24,6 +24,7 @@ create table Empleado (
 create table Sala (
 	Id int identity(1,1) not null,
 	Nombre varchar(150),
+	Capacidad int,
 	primary key(Id)
 );
 

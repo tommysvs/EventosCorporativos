@@ -51,9 +51,14 @@ namespace EventosCorporativos
             Main.Content = new Recursos();
         }
 
-        private void buttonFinanciero_Click(object sender, RoutedEventArgs e)
+        private void buttonIngresos_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Financiero();
+            Main.Content = new Ingresos();
+        }
+
+        private void buttonEgresos_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Egresos();
         }
 
         private void buttonFacturacion_Click(object sender, RoutedEventArgs e)

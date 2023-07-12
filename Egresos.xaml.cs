@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace EventosCorporativos
 {
     /// <summary>
-    /// Interaction logic for Financiero.xaml
+    /// Interaction logic for Egresos.xaml
     /// </summary>
-    public partial class Financiero : Page
+    public partial class Egresos : Page
     {
-        public Financiero()
+        public Egresos()
         {
             InitializeComponent();
         }
