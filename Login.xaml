@@ -9,12 +9,17 @@
       Title="Login">
 
     <Grid Background="#2E8A99">
-
-        <TextBox x:Name="textboxUsuario" HorizontalAlignment="Center" Text="Usuario" TextWrapping="Wrap" Padding="10,0,5,0" VerticalContentAlignment="Center" VerticalAlignment="Top"  Width="180" Height="34" Margin="0,186,0,0"/>
-        <TextBox x:Name="textboxContrasenia" HorizontalAlignment="Center" Text="Contraseña" Padding="10,0,5,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Center" Width="180" Height="34"/>
-        <Button x:Name="buttonIniciarSesion" Content="Iniciar sesión" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Background="#FFC2DEDC" Height="42" Width="124" IsDefault="True" Cursor="Hand" Foreground="#FF116A7B" RenderTransformOrigin="0.5,0.5" Click="buttonIniciarSesion_Click"  />
         <Label x:Name="labelIniciarSesion" Content="Iniciar sesión" HorizontalAlignment="Center" Height="39" Margin="0,135,0,0" VerticalAlignment="Top" Width="148" Foreground="White" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="buttonSolicitarUsuario" Content="Solicitar usuario" HorizontalAlignment="Left" Margin="880,10,0,0" VerticalAlignment="Top" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Height="20" Width="0"/>
-        <Label x:Name="label" Content="Solicitar usuario" HorizontalAlignment="Left" Margin="880,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="labelRegistrarse" Content="Registrarse" HorizontalAlignment="Center" Height="39" Margin="0,103,0,0" VerticalAlignment="Top" Width="148" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textboxUsuario" HorizontalAlignment="Center" Text="Usuario" TextWrapping="Wrap" Padding="10,0,5,0" VerticalContentAlignment="Center" VerticalAlignment="Top"  Width="180" Height="34" Margin="0,186,0,0"/>
+        <PasswordBox x:Name="passwordBoxContraseña" HorizontalAlignment="Left" Margin="410,237,0,0" VerticalAlignment="Top" Padding="10,0,5,0" Width="180" Height="34"/>
+        <Button x:Name="buttonIniciarSesion" Content="Iniciar sesión" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Background="#FFC2DEDC" Height="42" Width="124" IsDefault="True" Cursor="Hand" Foreground="#FF116A7B" RenderTransformOrigin="0.5,0.5" Click="buttonIniciarSesion_Click"  />
+        <Button x:Name="buttonSolicitarUsuario" Content="Solicitar usuario" HorizontalAlignment="Left" Margin="880,10,0,0" VerticalAlignment="Top" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Height="20" Width="100" Click="buttonSolicitarUsuario_Click"/>
+        <TextBox x:Name="textboxUsuarioC" HorizontalAlignment="Center" Text="Usuario" TextWrapping="Wrap" Padding="10,0,5,0" VerticalContentAlignment="Center" VerticalAlignment="Top"  Width="180" Height="34" Margin="0,146,0,0"/>
+        <PasswordBox x:Name="passwordBoxContraseñaC" HorizontalAlignment="Center" Margin="0,186,0,0" VerticalAlignment="Top" Padding="10,0,5,0" Width="180" Height="34"/>
+        <TextBox x:Name="textboxNombreC" HorizontalAlignment="Center" Text="Nombre" TextWrapping="Wrap" Padding="10,0,5,0" VerticalContentAlignment="Center" VerticalAlignment="Top"  Width="180" Height="34" Margin="0,227,0,0"/>
+        <TextBox x:Name="textboxCorreoC" HorizontalAlignment="Center" Text="Correo" TextWrapping="Wrap" Padding="10,0,5,0" VerticalContentAlignment="Center" VerticalAlignment="Top"  Width="180" Height="34" Margin="0,268,0,0"/>
+        <Button x:Name="buttonRegistrarse" Content="Registrarse" HorizontalAlignment="Center" Margin="0,315,0,0" VerticalAlignment="Top" Background="#FFC2DEDC" Height="42" Width="124" IsDefault="True" Cursor="Hand" Foreground="#FF116A7B" RenderTransformOrigin="0.5,0.5" Click="buttonRegistrarse_Click"  />
+        <Button x:Name="buttonIniciarSesionC" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="880,10,0,0" VerticalAlignment="Top" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Height="20" Width="100" Click="buttonIniciarSesionC_Click"/>
     </Grid>
 </Page>

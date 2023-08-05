@@ -11,5 +11,6 @@
     <Grid Background="#2E8A99">
         <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="1" Opacity="0.2" Margin="36,74,0,0" Width="129" HorizontalAlignment="Left"/>
         <Label x:Name="labelFacturacion" Content="Facturación" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="129" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="buttonGenerarFactura" Content="Generar factura" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF0E2954" Foreground="White" BorderBrush="{x:Null}" Width="140" Height="40"/>
     </Grid>
 </Page>

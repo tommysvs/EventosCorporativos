@@ -23,12 +23,7 @@ namespace EventosCorporativos
         public AppWindow()
         {
             InitializeComponent();
-            Main.Content = new Inicio();
-        }
-
-        private void buttonInicio_Click(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Inicio();
+            Main.Content = new Login();
         }
 
         private void buttonLogin_Click(object sender, RoutedEventArgs e)

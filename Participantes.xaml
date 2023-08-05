@@ -20,13 +20,13 @@
         <TextBox x:Name="textBoxNombre" HorizontalAlignment="Left" Margin="111,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="558" Height="30"/>
         <TextBox x:Name="textBoxEmpresa" HorizontalAlignment="Left" Margin="111,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
         <TextBox x:Name="textBoxCargo" HorizontalAlignment="Left" Margin="111,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Height="30"/>
-        <TextBox x:Name="textBoxTelefono" HorizontalAlignment="Left" Margin="111,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="30"/>
+        <TextBox x:Name="textBoxTelefono" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Margin="111,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="30"/>
         <TextBox x:Name="textBoxCorreo" HorizontalAlignment="Left" Margin="471,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Height="30"/>
         <ComboBox x:Name="comboBoxEstado" HorizontalAlignment="Left" Margin="111,342,0,0" VerticalAlignment="Top" Width="120" Height="30">
             <ComboBoxItem>Activo</ComboBoxItem>
             <ComboBoxItem>Inactivo</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="buttonGuardarParticipante" Content="Guardar" HorizontalAlignment="Left" Margin="37,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FF45C33E" Foreground="White" Cursor="Hand"/>
+        <Button x:Name="buttonGuardarParticipante" Content="Guardar" HorizontalAlignment="Left" Margin="37,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FF45C33E" Foreground="White" Cursor="Hand" Click="buttonGuardarParticipante_Click"/>
         <Button x:Name="buttonBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="195,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Foreground="White" Background="#FFCFC724" Cursor="Hand"/>
         <Button x:Name="buttonEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="823,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FFDE5656" Foreground="White" Cursor="Hand"/>
     </Grid>

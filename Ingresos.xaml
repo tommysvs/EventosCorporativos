@@ -10,14 +10,18 @@
 
     <Grid Background="#2E8A99">
         <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="1" Opacity="0.2" Margin="36,74,0,0" Width="252" HorizontalAlignment="Left"/>
-        <Label x:Name="labelFinanciero" Content="Registrar recibo" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="268" Foreground="White" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="labelEventoFin" Content="Escoja el evento:" HorizontalAlignment="Left" Margin="33,99,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
-        <ComboBox x:Name="comboBoxEventoFin" HorizontalAlignment="Left" Margin="36,133,0,0" VerticalAlignment="Top" Width="304">
+        <Label x:Name="labelIngreso" Content="Registrar recibo" HorizontalAlignment="Left" Height="39" Margin="33,21,0,0" VerticalAlignment="Top" Width="268" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="labelEventoIng" Content="Escoja el evento:" HorizontalAlignment="Left" Margin="33,99,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="comboBoxEventoIng" HorizontalAlignment="Left" Margin="36,133,0,0" VerticalAlignment="Top" Width="304">
         </ComboBox>
-        <Label x:Name="labelParticipanteFin" Content="Participante:" HorizontalAlignment="Left" Margin="34,184,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
-        <ComboBox x:Name="comboBoxParticipanteFin" HorizontalAlignment="Left" Margin="37,218,0,0" VerticalAlignment="Top" Width="304"/>
+        <Label x:Name="labelParticipanteIng" Content="Participante:" HorizontalAlignment="Left" Margin="34,184,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="comboBoxParticipanteIng" HorizontalAlignment="Left" Margin="37,218,0,0" VerticalAlignment="Top" Width="304"/>
         <Button x:Name="buttonRegistrarRecibo" Content="Registrar recibo" HorizontalAlignment="Left" Margin="37,414,0,0" VerticalAlignment="Top" Width="130" Height="40" Background="#FF45C33E" Foreground="White" Cursor="Hand"/>
         <Label x:Name="label" Content="Monto" HorizontalAlignment="Left" Margin="430,184,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
-        <TextBox x:Name="textBoxMontoFin" HorizontalAlignment="Left" Margin="430,218,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxMontoIng" HorizontalAlignment="Left" Margin="430,218,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelFechaIng" Content="Fecha" HorizontalAlignment="Left" Margin="634,184,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <DatePicker x:Name="datePickerIngreso" HorizontalAlignment="Left" Margin="634,212,0,0" VerticalAlignment="Top" Width="204" FirstDayOfWeek="Monday" Text="Escoja la fecha" Cursor="Hand" RenderTransformOrigin="0.4,-0.513"/>
+        <RichTextBox x:Name="richTextBoxSala" Margin="36,299,569,155"/>
+        <Label x:Name="labelSComentarioSala" Content="Comentarios adicionales:" HorizontalAlignment="Left" Margin="36,265,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold"/>
     </Grid>
 </Page>

@@ -32,14 +32,7 @@
 
     <Grid Background="#1F6E8C">
         <Border BorderBrush="White" BorderThickness="0 0 0 1" VerticalAlignment="Top" Height="90" Opacity="0.2"></Border>
-        <StackPanel Orientation="Horizontal" Height="90" VerticalAlignment="Top" Width="800" HorizontalAlignment="Center">
-            <Button x:Name="buttonInicio" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonInicio_Click" >
-                <StackPanel Orientation="Vertical" Cursor="Hand">
-                    <fa:ImageAwesome Icon="Home" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />
-                    <TextBlock Text="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </StackPanel>
-            </Button>
-
+        <StackPanel Orientation="Horizontal" Height="90" VerticalAlignment="Top" Width="820" HorizontalAlignment="Center">
             <Button x:Name="buttonLogin" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="100" Height="90" Template="{StaticResource NoMouseOverButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="buttonLogin_Click" >
                 <StackPanel Orientation="Vertical" Cursor="Hand">
                     <fa:ImageAwesome Icon="ArrowRight" Height="20" Width="20" Foreground="White" RenderTransformOrigin="0.5,0.5" />

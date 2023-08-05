@@ -1,5 +1,14 @@
 use EVENTOS;
 
+create table Usuarios (
+	Id int identity(1, 1) not null,
+	Usuario varchar(50) not null,
+	Contrasenia binary(64) not null,
+	Nombre varchar(50) not null,
+	Correo varchar(100) not null
+	primary key(Id)
+);
+
 create table Participante (
 	Id int identity(1, 1) not null,
 	Nombre varchar(150),
